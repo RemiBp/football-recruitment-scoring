@@ -1,0 +1,5 @@
+variable,model,scope,reference,psi
+score,TabICL,test,validation (out-of-time),0.02107863283005225
+score,TabICL,2023,validation (out-of-time),0.02341992792386833
+score,TabICL,2024,validation (out-of-time),0.03304323261251821
+score,TabICL,2025,validation (out-of-time),0.03445101286521756

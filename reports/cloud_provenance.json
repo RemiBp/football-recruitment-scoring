@@ -1,0 +1,15 @@
+{
+  "repository": "RemiBp/football-recruitment-scoring",
+  "run_id": 35740388579,
+  "run_url": "https://github.com/RemiBp/football-recruitment-scoring/actions/runs/35740388579",
+  "code_commit": "82ecdde",
+  "jobs": {
+    "integrity": "success",
+    "stability": "success",
+    "foundation": "success"
+  },
+  "source_artifacts": [
+    "stability-results",
+    "foundation-results"
+  ]
+}

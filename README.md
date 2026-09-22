@@ -2,9 +2,19 @@
 
 Course project: can last season's performance help estimate whether an attacking player scores at least 10 league goals next season?
 
-The dataset and code are ready for group review. Cloud model runs are being checked; conclusions will be added from the actual outputs.
+The dataset, four model comparisons and 200-replicate stability results are ready for group review. [Cloud run](https://github.com/RemiBp/football-recruitment-scoring/actions/runs/35740388579): all jobs passed. This is a working contribution, not the complete group submission.
+
+## Results
+
+Test AUC: Logistic 0.805, Random Forest 0.792, XGBoost 0.802, TabICL 0.811. TabICL uses a 1,500-row training context; matched classical baselines are provided. The paired bootstrap interval for Logistic minus XGBoost spans zero. Logistic scores move least under the specified measurement-noise test. None of these results establishes nationality discrimination.
 
 ## Start here
+
+- `docs/index.html`: concise standalone report. Download it and open locally.
+- `deliverables/Football stability.pptx`: two editable slides, with speaker notes.
+- `deliverables/Speaker notes.md`: 90-second script and Q&A.
+- `audit.ipynb`: executed audit notebook.
+- `HANDOFF.md`: group message and decisions to confirm.
 
 - `dataset_final.parquet`: 8,428 player-seasons across nine leagues; 6,823 observed outcomes.
 - `build_dataset.py`: raw CSVs to a reproducible, typed table.

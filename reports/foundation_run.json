@@ -1,0 +1,11 @@
+{
+  "model": "TabICL",
+  "checkpoint": "tabicl-classifier-v2-20260212.ckpt",
+  "context_rows": 1500,
+  "context_sampling": "training-only, stratified on target, seed42",
+  "ensemble_size": 1,
+  "inference_batch_size": 256,
+  "device": "cpu",
+  "seconds": 32.753989264,
+  "comparison_limit": "Classical primary models use all training rows; matched 1500-row baselines are provided separately."
+}

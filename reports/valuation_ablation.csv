@@ -1,0 +1,2 @@
+model,scope,auc,average_precision,brier,log_loss,n,positive_rate
+Logistic without valuation,test,0.7970302299786058,0.47208893204504354,0.11251816535158791,0.36432501621127467,2057,0.1648031113271755

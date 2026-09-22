@@ -1,0 +1,81 @@
+variable,model,scope,reference,psi
+score,Logistic,test,train (in-sample),0.03016240403324265
+score,Logistic,test,validation (out-of-time),0.029422987291347548
+score,Logistic,2023,train (in-sample),0.047365128156792655
+score,Logistic,2023,validation (out-of-time),0.03587274326210051
+score,Logistic,2024,train (in-sample),0.045184140165119485
+score,Logistic,2024,validation (out-of-time),0.035627195678659095
+score,Logistic,2025,train (in-sample),0.03604891396637426
+score,Logistic,2025,validation (out-of-time),0.036493082172948436
+score,Random Forest,test,train (in-sample),0.06148201811519973
+score,Random Forest,test,validation (out-of-time),0.01151199121159806
+score,Random Forest,2023,train (in-sample),0.05645845834436471
+score,Random Forest,2023,validation (out-of-time),0.02258557223133172
+score,Random Forest,2024,train (in-sample),0.09243355909796075
+score,Random Forest,2024,validation (out-of-time),0.016125600432657355
+score,Random Forest,2025,train (in-sample),0.06397672649614151
+score,Random Forest,2025,validation (out-of-time),0.017378825688967783
+score,XGBoost,test,train (in-sample),0.028619600028524934
+score,XGBoost,test,validation (out-of-time),0.010801478329387413
+score,XGBoost,2023,train (in-sample),0.022039712704990166
+score,XGBoost,2023,validation (out-of-time),0.01710759818098934
+score,XGBoost,2024,train (in-sample),0.06532746033944875
+score,XGBoost,2024,validation (out-of-time),0.013105216875511465
+score,XGBoost,2025,train (in-sample),0.032959139705935184
+score,XGBoost,2025,validation (out-of-time),0.024372008321443074
+goals_prev,input,test,train,0.009763116744461627
+goals_prev,input,2023,train,0.008862986503590652
+goals_prev,input,2024,train,0.025463328080788675
+goals_prev,input,2025,train,0.017499771490699898
+assists_prev,input,test,train,0.005846894437835934
+assists_prev,input,2023,train,0.027024228847709216
+assists_prev,input,2024,train,0.004838036322394986
+assists_prev,input,2025,train,0.010778165951783441
+minutes_prev,input,test,train,0.00813273332277771
+minutes_prev,input,2023,train,0.015558857215271138
+minutes_prev,input,2024,train,0.017451992793756945
+minutes_prev,input,2025,train,0.021012741861574938
+goals_per90_prev,input,test,train,0.006815936530789239
+goals_per90_prev,input,2023,train,0.01162809051155072
+goals_per90_prev,input,2024,train,0.019555914094146924
+goals_per90_prev,input,2025,train,0.008548000282816609
+appearances_prev,input,test,train,0.06387766088395044
+appearances_prev,input,2023,train,0.05434894649341157
+appearances_prev,input,2024,train,0.0981673947050935
+appearances_prev,input,2025,train,0.06176947201462441
+age,input,test,train,0.011234634673855135
+age,input,2023,train,0.02632774401591537
+age,input,2024,train,0.03400641635909331
+age,input,2025,train,0.024409362406965306
+valuation_eur,input,test,train,0.14058236928237358
+valuation_eur,input,2023,train,0.12527202548069175
+valuation_eur,input,2024,train,0.15480503117953925
+valuation_eur,input,2025,train,0.18822185039438424
+valuation_growth_12m,input,test,train,0.05072863690718608
+valuation_growth_12m,input,2023,train,0.05874463065747365
+valuation_growth_12m,input,2024,train,0.07061240754567882
+valuation_growth_12m,input,2025,train,0.06197688687337381
+club_mean_valuation_eur,input,test,train,0.2288479391719806
+club_mean_valuation_eur,input,2023,train,0.22770045323554228
+club_mean_valuation_eur,input,2024,train,0.2766224749920569
+club_mean_valuation_eur,input,2025,train,0.2500351014188815
+height_cm,input,test,train,0.05614919013423168
+height_cm,input,2023,train,0.042246917078361854
+height_cm,input,2024,train,0.05458907275942612
+height_cm,input,2025,train,0.05429661746444516
+club_change_known_at_cutoff,input,test,train,8.251550090399814e-05
+club_change_known_at_cutoff,input,2023,train,0.001095840029099572
+club_change_known_at_cutoff,input,2024,train,0.0010873946061319927
+club_change_known_at_cutoff,input,2025,train,0.0010571892689203663
+position,input,test,train,0.007863626705356527
+position,input,2023,train,0.012172773484463915
+position,input,2024,train,0.00479998071488403
+position,input,2025,train,0.024712590488115558
+league,input,test,train,0.012645023013414582
+league,input,2023,train,0.014258749380236167
+league,input,2024,train,0.02047249268498198
+league,input,2025,train,0.018972568978679962
+foot,input,test,train,0.026729048305097043
+foot,input,2023,train,0.02923995406145287
+foot,input,2024,train,0.03257975707943536
+foot,input,2025,train,0.01437666241986807

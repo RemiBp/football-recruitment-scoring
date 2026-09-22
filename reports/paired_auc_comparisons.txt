@@ -1,0 +1,2 @@
+Logistic vs Random Forest: paired AUC difference interval +0.001 to +0.027.
+Logistic vs XGBoost: paired AUC difference interval -0.007 to +0.011.
