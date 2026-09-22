@@ -11,7 +11,7 @@ Academic comparison of sporting-performance scores for a hypothetical club. The 
 - Missing next-season appearances mean unknown coverage, not zero goals. Such rows remain in the released table with a missing label and an explicit observation flag. Models condition on continued observation; attrition is reported.
 - National-team caps and goals must have historical dates to be usable. Latest profile totals cannot be substituted. Unsupported requested features remain explicitly unavailable.
 - Club valuation is reconstructed from the prior-season squad and each member's valuation before the cutoff. It is a historical proxy, not the provider's current club total.
-- Player profile attributes (position, citizenship, foot, height) are snapshot metadata. Their historical validity is not established; position-control results are descriptive. Passing timestamp tests does not certify all metadata as historically known.
+- Position is the minute-weighted modal position in dated prior-season match lineups. Citizenship, foot and height remain snapshot metadata; their historical validity is not established. Position-stratified comparisons remain descriptive. Passing timestamp tests does not certify all metadata as historically known.
 - Train, validation and test use different target seasons in chronological order. The same player may recur across seasons: this corresponds to forecasting known players. A separate unseen-player test sensitivity is reported. No player identifiers or names enter the models.
 - All imputation, scaling, categorical encoding and PSI bins are fit on training data only. The final test is used for evaluation, not for choosing model settings.
 - Bootstrap samples are clustered by player to preserve repeated seasons. Training bootstraps refit preprocessing and logistic coefficients; test bootstraps quantify conditional AUC uncertainty. They answer different questions.
@@ -35,3 +35,11 @@ The proposed nationality differences, valuation-mediated proxy effects and super
 - French recruitment discrimination provisions: https://travail-emploi.gouv.fr/discriminations-lembauche-de-quoi-parle-t . No conclusion on a particular club or player is drawn here.
 
 The brief's claim about nationality premiums in valuations still needs specific supporting papers. Do not present it as an established result of this dataset.
+
+## Source coverage decisions
+
+- Nine single-phase leagues: England, France, Germany, Italy, Spain, Netherlands, Portugal, Russia and Türkiye. Playoff leagues and newly added leagues are excluded from the primary cohort. COVID target seasons 2019 and 2020 are excluded because a July 1 cutoff cannot contain their full prior or target season.
+- No national-team match appearances join in this snapshot. International fields are missing and excluded from model inputs. The requested career caps and international goals remain unavailable.
+- Club changes mean observed transfers after the last prior-season appearance and strictly before July 1. Most summer transfers occur later and cannot enter this forecast.
+- Goals are counted only in the nine selected leagues. An observed player can still have incomplete coverage after a move outside them. The released outcome is observed goals, not a certified full worldwide career total.
+- Valuation age is retained through its timestamp; some valuations are stale. Current heights and citizenship also need stronger historical provenance before any real deployment.

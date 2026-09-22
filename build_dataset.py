@@ -11,7 +11,6 @@ LEAGUES = ['ES1', 'FR1', 'GB1', 'IT1', 'L1', 'NL1', 'PO1', 'RU1', 'TR1']
 OFFENSIVE = ['Centre-Forward', 'Left Winger', 'Right Winger', 'Second Striker', 'Attacking Midfield']
 NUMERIC = ['goals_prev', 'assists_prev', 'minutes_prev', 'goals_per90_prev', 'appearances_prev',
            'age', 'valuation_eur', 'valuation_growth_12m', 'club_mean_valuation_eur',
-           'observed_international_appearances', 'observed_international_goals',
            'height_cm', 'club_change_known_at_cutoff']
 CATEGORICAL = ['position', 'league', 'foot']
 FEATURES = NUMERIC + CATEGORICAL
@@ -110,7 +109,9 @@ def build(raw: Path, output: Path):
     df = strict_asof(df,intl[['player_id','international_max_date','observed_international_appearances','observed_international_goals']],
                      'cutoff_date','international_max_date')
     for col in ['observed_international_appearances','observed_international_goals']:
-        df[col] = df[col].fillna(0)
+        # This snapshot has no matched national-team appearances. Missing must
+        # remain unavailable, not an invented career-cap total.
+        df[col] = df[col].astype(float)
     t = load(raw,'transfers',['player_id','transfer_date','from_club_id','to_club_id'])
     t['transfer_date'] = pd.to_datetime(t.transfer_date)
     # Multiple transfers on one date can be an administrative loan return/reloan.
@@ -136,7 +137,8 @@ def build(raw: Path, output: Path):
     columns = ['player_id','prior_season','target_season','split','cutoff_date'] + FEATURES + [
         'citizenship_audit','prior_club_id','top_five_league','yellow_cards_prev','red_cards_prev',
         'performance_max_date','valuation_date','valuation_prior_date','club_valuation_max_date',
-        'club_valued_players','club_squad_players','international_max_date','transfer_date',
+        'club_valued_players','club_squad_players','observed_international_appearances',
+        'observed_international_goals','international_max_date','transfer_date',
         'outcome_observed','goals_next','target_minutes','target_first_date','target_last_date',
         'target_8','target_10','target_15']
     df = df[columns].sort_values(['target_season','player_id']).reset_index(drop=True)
