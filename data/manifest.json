@@ -1,0 +1,34 @@
+{
+  "source": "https://www.kaggle.com/api/v1/datasets/download/davidcariboo/player-scores",
+  "publisher_snapshot": "2026-07-06",
+  "schema_version": "1.0.0",
+  "leagues": [
+    "ES1",
+    "FR1",
+    "GB1",
+    "IT1",
+    "L1",
+    "NL1",
+    "PO1",
+    "RU1",
+    "TR1"
+  ],
+  "rows": 8428,
+  "players": 3381,
+  "observed_labels": 6823,
+  "dataset_sha256": "c4d57d4b0ff48a29b4e74d3d53527153fc661197957ed4cd3d0d4a0d40194b66",
+  "raw_sha256": {
+    "appearances.csv": "c4ba5327f9005e4a9914c0f78c3b07132ef2cf1a4babda379bbf54ffd207ebec",
+    "club_games.csv": "d840a80e58b47423bdcdd6c6770c15fb477b31bfee356a52eb4b1a9c5c64195e",
+    "clubs.csv": "26dc6113d8206246145add2c7a318a657b3995fccdb0c9004d65ca6ae5e5968b",
+    "competitions.csv": "fadaf2992e01f8450d8d419006b0f533bbd6742163f4a0c5ee6a157fae7b791e",
+    "countries.csv": "d694bb609efa95b90283f72fbf8f849713be6df4d3f79b34604121231424a5fe",
+    "game_events.csv": "93a4938b5ef31d4234590d3897b9c7baddfa13a1a392e00a86645b2a2221c535",
+    "game_lineups.csv": "06af8b0fcffc675eb2dc6363f185caad0ffb6835d018004dcc9a0eb1c5a50145",
+    "games.csv": "c24da068cc7444e1e345c274d8d2320226cafc02186a17de2cf766eccb8ae79b",
+    "national_teams.csv": "e0fa44d795491eba6277812d58a4b0cebd3db98446dd10442eb984b8c0a0c0ed",
+    "player_valuations.csv": "9caf4ff707905f71463a04253c5ac640b3ff9575e07912fd7c50365697efa47d",
+    "players.csv": "b94216cf2ff8777b5eddd4fd91402c19e757b366fbdeb4f4437580c302ff2d66",
+    "transfers.csv": "5331311c6ec68c2c7a9c22979aff7d6f6fd2cefd96201d1bcfb35998a9d244ae"
+  }
+}
