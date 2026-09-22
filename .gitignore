@@ -9,3 +9,5 @@ data/source.zip
 models/
 *.log
 build/
+
+.chart-data-*/
