@@ -11,7 +11,7 @@ Test AUC: Logistic 0.805, Random Forest 0.792, XGBoost 0.802, TabICL 0.811. TabI
 ## Start here
 
 - `docs/index.html`: concise standalone report. Download it and open locally.
-- `deliverables/Football stability.pptx`: two editable slides, with speaker notes. [Preview 1](deliverables/previews/slide-1.png) · [Preview 2](deliverables/previews/slide-2.png)
+- `deliverables/Football stability.pptx`: two editable slides without presenter notes. [Preview 1](deliverables/previews/slide-1.png) · [Preview 2](deliverables/previews/slide-2.png)
 - `deliverables/Speaker notes.md`: 90-second script and Q&A.
 - `audit.ipynb`: executed audit notebook.
 - `HANDOFF.md`: group message and decisions to confirm.
